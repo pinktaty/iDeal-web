@@ -1,0 +1,318 @@
+html, body{
+	text-align: center;
+	background-color: aliceblue;
+}
+
+h5, h4, p{
+	font-family: 'Questrial';
+}
+
+h3{
+	font-family: 'Alkatra';
+	font-size: 2rem;
+}
+
+a{
+	font-size: 1.1rem;
+}
+
+/* Navegation Bar */
+.container-fluid {
+  	padding: 0 2rem;
+  	background-color: #276F78;
+}
+
+.navbar {
+  	padding: 1.2rem 0;
+}
+
+.navbar-image{
+	width: 4rem;
+	height: 4rem;
+	margin-right: 1rem;
+	border-radius: 100%;
+}
+
+.navbar-brand {
+  	color: #fff;
+  	font-size: 2.5rem;
+	font-family: 'Lobster';
+}
+
+.nav-item {
+  	margin: 0 0.5rem;
+	padding-top: 1.3rem;
+	text-align: center;
+}
+
+.nav-fix{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.nav-link {
+  	color: #fff;
+  	font-size: 1.3rem;
+	font-family: 'Alkatra';
+}
+
+.navbar-link-fixit{
+	margin-bottom: 0.5rem;
+	border-bottom: 2px solid aliceblue;
+}
+
+.navbar-fixit {
+  	margin-top: 1rem;
+  	background-color: #212529;
+}
+
+/* Presentation */
+#title h5{
+	text-align: justify;
+	margin: 1rem;
+}
+.presentation {
+  	padding: 2rem;
+}
+
+/* Services */
+#servicios {
+  	background-color: #54C1D0;
+	margin: 1rem 3rem;
+}
+
+.btn-line-carousel{
+	border: 0;
+	width: 100%;
+  	background-color: #212529;
+	color: aliceblue;
+	margin: 0.8rem 0;
+	font-size: 2rem;
+	font-family: 'Alkatra';
+}
+
+.fa-mouse-pointer{
+	margin-left: 5rem;
+	font-size: 1.4rem;
+}
+
+.servicios-icon{
+	margin-right: 5rem;
+	height: 3rem;
+	border-radius: 100%;
+}
+
+.servicios-image {
+	width: 100%;
+}
+
+li::marker {
+  	font-size: 0;
+}
+
+/* Ubicación */
+#ubicación {
+  	padding: 2rem 3rem;
+  	margin-top: 2rem;
+}
+
+.div-map {
+  	background-color: #276F78;
+  	padding: 1rem;
+  	margin-top: 1rem;
+}
+
+.map {
+  	position: relative;
+}
+
+.map iframe {
+  	height: 100%;
+  	width: 100%;
+  	left: 0;
+  	top: 0;
+}
+
+/* Horarios */
+
+#horarios{
+	margin: 0 5rem -1rem;
+	padding-top: 2rem;
+	position: relative;
+}
+
+.horario-box {
+  	margin: 2.5rem 0 1rem;
+  	padding: 0 3rem;
+}
+
+.horario-icon {
+  	padding-bottom: 1rem;
+  	font-size: 5rem;
+  	color: #212529;
+}
+
+.horario-icon:hover {
+  	color: #54C1D0;
+}
+
+/* Contacto */
+#contacto {
+  	padding: 1rem;
+}
+
+.form-div {
+  	margin: 2rem 3rem;
+}
+
+.form {
+  	padding: 1rem 0 2rem;
+}
+
+.input-correo {
+  	padding-bottom: 0.5rem;
+}
+
+.btn-submit {
+	padding-top: 1rem;
+}
+
+.fa-paper-plane{
+	padding: 0 1rem;
+	font-size: 1.2rem;
+}
+
+.socials {
+  	margin: 2rem 0;
+}
+
+.social-icon{
+	margin: 3rem;
+	font-size: 2rem;
+ 	color: #276F78;
+}
+
+/* Servicios Page */
+.row-fixit{
+	width: 100%;
+	margin: 0;
+}
+
+.card{
+	width: 12rem;
+	margin: 1rem 0;
+}
+
+.servicio{
+	padding-top: 8rem;
+	margin-bottom: -5rem;
+}
+
+#notas{
+	padding-top: 8.5rem;
+	margin-bottom: -6rem;
+}
+
+/* Calculator Section */
+#calculadora{
+	padding-bottom: 3rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	text-align: center;
+}
+
+.row-headers{
+	margin: 1rem 0 0;
+}
+
+.cal-header{
+	font-size: 1.4rem;
+	font-family: 'Alkatra';
+}
+
+.cal-total-box{
+	margin: 1rem 0;
+}
+
+.calculator-row{
+	padding: 1rem 0;
+	margin: 0.5rem 0;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #54C1D0;
+	display: flex;
+	align-items: center;
+}
+
+.cal-service-img{
+	width: 75px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.cal-box-text{
+	display: flex;
+	align-items: center;
+}
+
+.cal-box-price{
+	margin-left: 1rem;
+}
+
+.service-quantity{
+	width: 3.3rem;
+	margin-bottom: 0.3rem;
+}
+
+@media screen and (max-width: 640px){
+	h5{
+		font-size: 1.1rem;
+	}
+
+	h3{
+		font-size: 1.6rem;
+	}
+
+	.navbar-image{
+		margin-bottom: 0.7rem;
+	}
+
+	.navbar-brand{
+		font-size: 1.82rem;
+		position: static;
+	}
+
+	.navbar-toggler{
+		margin-top: 0.5rem;
+	}
+
+	.btn-line-carousel{
+		font-size: 1.3rem;
+	}
+
+	.fa-mouse-pointer{
+		margin-left: 0.5rem;
+		font-size: 1rem;
+	}
+
+	.servicios-icon{
+		margin-right: 0.5rem;
+		height: 1.4rem;
+	}
+
+	.servicios-image{
+		height: 12rem;
+	}
+}
+
+@media screen and (max-width: 370px){
+	.navbar-brand{
+		font-size: 1.5rem;
+		flex-wrap: wrap;
+		white-space: normal;
+		text-align: left;
+		margin-top: 0.2rem;
+	}
+}

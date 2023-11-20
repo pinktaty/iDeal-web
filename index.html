@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Tintorería Ideal</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    	<link rel="stylesheet" href="prueba.css">
+    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Lobster&family=Questrial&display=swap" rel="stylesheet">
+  	</head>
+  	<body>
+		<section id="title">
+			<div class="container-fluid">
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<a href="#">
+						<img class="navbar-image" src="./assets/images/ideal-icon.png">
+					</a>
+					<a	class="navbar-brand" href="#">
+						Tintorería & Lavandería Ideal
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="navbar-principal collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item nav-fix">
+								<a class="nav-link" aria-current="page" href="servicios.html">Servicios</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+								</div>
+							</li>
+					 		<li class="nav-item nav-fix">
+								<a class="nav-link" aria-current="page" href="#ubicación">Ubicación</a>
+							</li>
+							<li class="nav-item nav-fix">
+								<a class="nav-link" aria-current="page" href="#horarios">Horarios</a>
+							</li>
+							<li class="nav-item nav-fix">
+								<a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="presentation">
+				<h5>Es un placer presentar nuestra empresa de tintorería, lavandería y planchaduría con más de 15 años de experiencia en el mercado. A lo largo de los años, hemos establecido una sólida reputación por ofrecer un servicio de alta calidad y por cuidar de la ropa de nuestros clientes como si fuera la nuestra.</h5>
+				<h5>Entendemos que cada prenda es única y, por lo tanto, tratamos cada una con el cuidado y la atención que se merece. Además, ofrecemos servicios personalizados para satisfacer las necesidades de cada cliente.</h5>
+				<h5>¡Gracias por confiar en nosotros!</h5>
+			</div>
+		</section>
+
+		<section id="servicios">
+			<div id="carousel-servicios" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-bs-target="#carousel-servicios" data-bs-slide-to="0" class="active"></li>
+					<li  data-bs-target="#carousel-servicios" data-bs-slide-to="1"</li>
+					<li data-bs-target="#carousel-servicios" data-bs-slide-to="2"</li>
+					<li data-bs-target="#carousel-servicios" data-bs-slide-to="3"</li>
+				</ol>
+        		<div class="carousel-inner">
+          			<div class="carousel-item active">
+						<button id="tintorería-btn" class="btn-line-carousel">
+							<div>
+								<img class="servicios-icon" src="./assets/images/tintoreria-icon.jpg">
+								Tintorería
+								<i class="fas fa-mouse-pointer"></i>
+							</div>
+						</button>
+            			<img class="servicios-image" src="./assets/images/tintoreria-servicio.jpg" alt="first-slide">
+          			</div>
+          			<div class="carousel-item">
+						<button id="lavandería-btn" class="btn-line-carousel">
+							<div>
+								<img class="servicios-icon" src="./assets/images/lavanderia-icon.jpg">
+								Lavandería
+								<i class="fas fa-mouse-pointer"></i>
+							</div>
+						</button>
+            			<img class="servicios-image" src="./assets/images/lavanderia-servicio.jpg" alt="second-slide">
+          			</div>
+          			<div class="carousel-item">
+						<button id="planchaduría-btn" class="btn-line-carousel">
+							<div>
+								<img class="servicios-icon" src="./assets/images/planchaduria-icon.jpg">
+								Planchaduría
+								<i class="fas fa-mouse-pointer"></i>
+							</div>
+						</button>
+            			<img class="servicios-image" src="./assets/images/lavanderia-servicio.jpg" alt="third-slide">
+          			</div>
+          			<div class="carousel-item">
+						<button id="servicios-especiales-btn" class="btn-line-carousel">
+							<div>
+								<img class="servicios-icon" src="./assets/images/tintoreria-icon.jpg">
+								Servicios Especiales
+								<i class="fas fa-mouse-pointer"></i>
+							</div>
+						</button>
+            			<img class="servicios-image" src="./assets/images/tintoreria-servicio.jpg" alt="fourth-slide">
+          			</div>
+          			<button class="carousel-control-prev" type="button" data-bs-target="#carousel-servicios" data-bs-slide="prev">
+            			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            			<span class="visually-hidden">Previous</span>
+          			</button>
+         			<button class="carousel-control-next" type="button" data-bs-target="#carousel-servicios" data-bs-slide="next">
+            			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+            			<span class="visually-hidden">Next</span>
+          			</button>
+        		</div>
+		</section>
+
+		<section id="ubicación">
+			<h3>¿Quieres encontrarnos?</h3>
+				<div class="div-map">
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30126.471877514687!2d-99.05465861425866!3d19.2906712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce031bf7d3ec5d%3A0xeb303a679766c9a3!2sTintorer%C3%ADa%20y%20Lavander%C3%ADa%20Idddeal!5e0!3m2!1ses!2smx!4v1680746527570!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+		</section>
+
+		<section id="horarios">
+			<h3>Ven a visitarnos a estas horas!</h3>
+			<div class="row">
+				<div class="horario-box col-lg-4">
+					<i class="horario-icon fas fa-calendar-day"></i>
+					<h3>Lunes a viernes</h3>
+					<p>9:00 - 20:00</p>
+				</div>
+				<div class="horario-box col-lg-4">
+					<i class="horario-icon fas fa-sun"></i>
+					<h3>Fines de semana</h3>
+					<p>Sábado: 9:00 - 20:00</p>
+					<p>Domingo: 9:00 - 15:00</p>
+				</div>
+				<div class="horario-box col-lg-4">
+					<i class="horario-icon fas fa-candy-cane"></i>
+					<h3>Días festivos</h3>
+					<p>Tradicionalmente de 9:00 a 15:00</p>
+					<p>Favor de comunicarse con nosotros para mayor certeza.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="contacto">
+			<!-- Next update for legal reasons
+			<div class="form-div">
+				<h3>¿Quieres tener acceso a descuentos especiales y ser el primero en enterarte de nuevos anuncios?</h3>
+				<form class="form needs-validation" novalidate>
+					<div class="form-group">
+						<label class="input-correo" for="InputEmail">Ingresa tu correo electrónico:</label>
+						<input type="email" class="form-control" id="InputEmail" placeholder="correo@ejemplo.com" required>
+						<small class="form-text text-muted">No compartiremos tu mail con nadie más.</small>
+						<div class="invalid-feedback">
+								Por favor ingresa un email válido.
+						</div>
+					</div>
+					<div class="btn-submit">
+						<button class="btn btn-outline-dark" type="submit"><i class="far fa-paper-plane"></i></button>
+					</div>
+				</form>
+			</div>
+			-->
+			<div class="socials">
+				<h3>¿Tienes alguna duda? ¡Estamos a tu servicio!</h3>
+				<a href="https://www.facebook.com/idealplusblu?mibextid=ZbWKwL"><i class="social-icon fab fa-facebook-f"></i></a>
+				<a href="9ideal9@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
+				<a href="https://wa.me/5215586179099"><i class="social-icon fab fa-whatsapp"></i></a>
+			</div>
+		</section>
+		<script src="./assets/scripts/general.js"></script>
+		<script src="./assets/scripts/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  	</body>
+</html>
