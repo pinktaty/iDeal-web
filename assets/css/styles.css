@@ -1,6 +1,7 @@
 html, body{
 	text-align: center;
 	background-color: aliceblue;
+	margin-left: -0.08rem;
 }
 
 h5, h4, p{
@@ -298,6 +299,10 @@ li::marker {
 	.fa-mouse-pointer{
 		margin-left: 0.5rem;
 		font-size: 1rem;
+	}
+
+	.card{
+		width: 10rem;
 	}
 
 	.servicios-icon{
