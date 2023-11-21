@@ -1,5 +1,8 @@
 // Calculadora v2.0
 
+// Aesthetics of calculator
+
+
 // Add event listener to buttons of services
 document.querySelectorAll(".btn-calculator").forEach(btn => {
 	btn.addEventListener('click', () => {
@@ -119,4 +122,10 @@ function adaptPrice(e){
 		service.querySelector(".cal-service-price").innerText = "$" + (beforePrice * value); 
 		updateTotal();
 	}
+}
+
+function eliminateClass(width, classToEliminate) {
+    if (window.innerWidth <= width) {
+        document.getElementsByClassName("." + classToEliminate).classList.remove(classToEliminate);
+    }
 }
