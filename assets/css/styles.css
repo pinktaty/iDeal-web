@@ -221,6 +221,7 @@ li::marker {
 	padding-left: 3rem;
 	padding-right: 3rem;
 	text-align: center;
+	margin-bottom: 2rem;
 }
 
 .row-headers{
