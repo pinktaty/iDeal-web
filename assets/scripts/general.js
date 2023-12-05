@@ -3,7 +3,7 @@ const navbarButton = document.querySelector(".navbar-principal-button");
 const navbarCollapse = document.querySelector(".navbar-principal");
 const navbarLinks = document.querySelectorAll(".nav-link");
 const navbarItems = document.querySelectorAll(".nav-item");
-let isItFixed = navbarCollapse.classList.contains("navbar-fixit");
+var isItFixed = navbarCollapse.classList.contains("navbar-fixit");
 
 navbarButton.addEventListener("click", () => {
 	if(isItFixed){

@@ -1,6 +1,37 @@
 // Calculadora v2.0
 
-// Aesthetics of calculator
+// Make aesthetics of calculator responsive
+const serviceColumn = document.querySelector(".serviceColumn");
+let adaptedCalculator = serviceColumn.classList.contains("col");
+
+if(window.innerWidth < 800){
+	eliminateClass(serviceColumn, "col-6");
+	addClass(serviceColumn, "col");
+}
+
+window.addEventListener("resize", () => {
+	let servicesInCalculator = document.querySelectorAll(".service");
+
+	if(window.innerWidth < 800 && !serviceColumn.classList.contains("col")){
+		eliminateClass(serviceColumn, "col-6");
+		addClass(serviceColumn, "col");
+		if(servicesInCalculator.length > 0){
+			servicesInCalculator.forEach(element => {
+				eliminateClass(element, "col-6");
+				addClass(element, "col");
+			});
+		}
+	 } else if(window.innerWidth > 799 && serviceColumn.classList.contains("col")){
+		eliminateClass(serviceColumn, "col");
+		addClass(serviceColumn, "col-6");
+		if(servicesInCalculator.length > 0){
+			servicesInCalculator.forEach(element => {
+				eliminateClass(element, "col");
+				addClass(element, "col-6");
+			});
+		}
+	}
+});
 
 
 // Add event listener to buttons of services
@@ -38,27 +69,54 @@ function addToCalculator(img, item, price){
 	const calculator = document.querySelector(".cal-services");
 	let addService = document.createElement("div");
 	addService.classList.add("row", "calculator-row");
-	addService.innerHTML = `
-	<div class="cal-row row col-6">
-		<div class="col-6">
-			<img class="cal-service-img" src="${img}">
+	let html = "";
+	if(window.innerWidth < 800){
+		html = `
+		<div class="service cal-row row col">
+			<div class="col">
+				<img class="cal-service-img" src="${img}">
+			</div>
+			<div class="cal-box-text col">
+				<span class="cal-service-text">${item}</span>
+			</div>
 		</div>
-		<div class="cal-box-text col">
-			<span class="cal-service-text">${item}</span>
+		<div class="cal-row cal-box-price col">
+			<span class="cal-service-price">${price}</span>
 		</div>
-	</div>
-	<div class="cal-row cal-box-price col">
-		<span class="cal-service-price">${price}</span>
-	</div>
-	<div class="cal-row cal-service-quantity row col">
-		<div class="col-lg-6">
-			<input class="service-quantity" type="number" value="1">
+		<div class="cal-row cal-service-quantity row col">
+			<div class="col-lg-6">
+				<input class="service-quantity" type="number" value="1">
+			</div>
+			<div class="col-lg-6">
+				<button class="eliminate-btn btn btn-outline-dark" type="button">Eliminar</button>
+			</div>
 		</div>
-		<div class="col-lg-6">
-			<button class="eliminate-btn btn btn-outline-dark" type="button">Eliminar</button>
+		`
+	} else {
+		html = `
+		<div class="service cal-row row col-6">
+			<div class="col">
+				<img class="cal-service-img" src="${img}">
+			</div>
+			<div class="cal-box-text col">
+				<span class="cal-service-text">${item}</span>
+			</div>
 		</div>
-	</div>
-	`
+		<div class="cal-row cal-box-price col">
+			<span class="cal-service-price">${price}</span>
+		</div>
+		<div class="cal-row cal-service-quantity row col">
+			<div class="col-lg-6">
+				<input class="service-quantity" type="number" value="1">
+			</div>
+			<div class="col-lg-6">
+				<button class="eliminate-btn btn btn-outline-dark" type="button">Eliminar</button>
+			</div>
+		</div>
+		`
+	}
+	addService.innerHTML = html;
+
 	// Special case of Ropa de diario
 	if(item == "Ropa de diario"){
 		addService.querySelector(".service-quantity").setAttribute("value", "3");
@@ -124,8 +182,14 @@ function adaptPrice(e){
 	}
 }
 
-function eliminateClass(width, classToEliminate) {
-    if (window.innerWidth <= width) {
-        document.getElementsByClassName("." + classToEliminate).classList.remove(classToEliminate);
+// Auxiliar function to eliminate the class of an object
+function eliminateClass(object, classToEliminate) {
+	if (object.classList.contains(classToEliminate)) {
+        object.classList.remove(classToEliminate);
     }
+}
+
+// Auxiliar function to add a class to an object
+function addClass(object, classToAdd){
+	object.classList.add(classToAdd);
 }
